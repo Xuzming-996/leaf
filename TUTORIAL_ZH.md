@@ -236,6 +236,7 @@ func main() {
 
 	// 发送消息
 	conn.Write(m)
+	time.sleep(time.Second * 2) //休眠两秒防止tcp关闭过快丢包
 }
 ```
 
